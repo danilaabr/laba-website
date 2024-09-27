@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Inter'; 
+    src: url('E:/projects/demo-site/Inter-Medium.otf') format('opentype'); 
+}
+
+body {
+    width: 1920px;
+    height: 1080px;
+    top: -2453px;
+    left: -10567px;
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif; 
+}
+
+.page-header .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+.brand h1 {
+    gap: 16px;
+    font-size: 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 160px;
+    border-bottom: 1px solid #EAECF0;
+}
+
+.brand a {
+    padding-right: 40px;
+    color: #0D1421;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.actions button {
+    size: 24px;
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+.title {
+    padding-left: 16px;
+    font-weight: 600;
+    padding-right: 80px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #354153;
+}
+
+.first_button {
+    padding-right: 8px;
+}
+
+.content img {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 352px;
+    height: 420px;
+    padding-left: 23px;
+    padding-inline: 23px;
+    padding-bottom: 16px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row; 
+    padding: 14px 160px;
+    width: 1600px;
+    height: auto;
+}
+
+.content h2 {
+    font-size: 18px;
+    color: #0D1421;
+    padding-left: 23px;
+    padding-bottom: 16px;;
+}
+
+.item1 div {
+    padding-left: 23px;
+    font-size: 14px;
+}
+
+.item2 div {
+    padding-left: 23px;
+    font-size: 14px;
+}
+
+.item3 div {
+    padding-left: 23px;
+    font-size: 14px;
+}
+
+.item4 div {
+    padding-left: 23px;
+    font-size: 14px;
+}
+
+.colortext {
+    color: #354153;
+}
+
+.brand-gap {
+    padding-bottom: 8px;
+}
+
+.content {
+    padding: 14px 160px;
+    width: 1600px;
+    height: 576px;
+}
+
+.select-table .table {
+    border: none;
+    font-size: 16px;
+    color: #354153;
+}
+
+.select-table .dropdown {
+    border: none;
+    font-size: 16px;
+    color: #354153;
+}
+
+.select-table {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    padding-top: 32px;
+    padding-bottom: 16px;
+    width: 1600px;
+    height: auto;
+    padding-left: 145px;
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.select-table .dropdown {
+    border: none;
+    font-size: 16px;
+    color: #354153;
+    border-radius: 8px;
+    padding-left: 23px;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    color: #667085;
+    size: 16px;
+    width: 1600px;
+    height: 24px;
+    background-color: #FFFFFF; 
+    padding-left: 183px;
+}
