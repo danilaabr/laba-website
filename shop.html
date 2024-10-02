@@ -28,18 +28,26 @@
     <main>
         <div class="action-header">
             <div class="select-table">
-                <select class="dropdown">
-                    <option>Акне Студия</option>
-                    <option>АМИ Париж</option>
-                    <option>Вквадрате2</option>
-                    <option>Каменный остров</option>
-                </select>
-                <select class="dropdown">
-                    <option value="by-default">По умолчанию</option>
-                    <option value="by-free">Сначала доступные</option>
-                    <option value="by-rich">Сначала дорогие</option>
-                </select>              
-            </div> 
+                <div class="dropdown-filter">
+                    <img class="settings_button" src="settings.svg">
+                    <button>Фильтры</button>
+                    <div class="dropdown-content">
+                        <label><input type="checkbox" value="Акне Студия"> Акне Студия</label>
+                        <label><input type="checkbox" value="АМИ Париж"> АМИ Париж</label>
+                        <label><input type="checkbox" value="Вквадрате2"> Вквадрате2</label>
+                        <label><input type="checkbox" value="Каменный остров"> Каменный остров</label>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button>По умолчанию</button>
+                    <div class="dropdown-list">
+                        <option>По умолчанию</option>
+                        <option>Сначала доступные</option>
+                        <option>Сначала дорогие</option>
+                    </div>
+                    <img class="select-down_list" src="select-down.svg">  
+                </div>
+            </div>
         </div>
         <div class="content">   
             <div class="item1">
