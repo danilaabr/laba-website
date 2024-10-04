@@ -179,7 +179,7 @@ footer {
     font-size: 16px;
     width: 1600px;
     height: 24px;
-    background-color: #FFFFFF; 
+    background-color: white;
     padding-left: 160px;
     padding-bottom: 24px;
 }
@@ -196,7 +196,7 @@ footer {
 
 .dropdown-filter button {
     font-family: Inter;
-    background-color: #FFFFFF;
+    background-color: white;
     color: #354153;
     font-size: 16px;
     border: none;
@@ -215,46 +215,27 @@ footer {
     color: #354153;
     display: none;
     position: absolute;
-    background-color: #FFFFFF;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    background-color: white;
+    border: 1px solid #F2F4F7;
+    border-radius: 8px;
     top: 100%; 
-    left: 0; 
+    left: 0px; 
+    overflow: hidden;
 }
 
 .dropdown-content label {
     display: block;
     padding: 10px;
-    background-color: #FFFFFF;
+    background-color: white;
     cursor: pointer;
 }
 
 .dropdown-content label:hover {
-    background-color: #FFFFFF;
+    background-color: white;
 }
 
 .dropdown-filter:hover .dropdown-content {
     display: block;
-}
-
-.dropdown-filter:hover button {
-    background-color: #FFFFFF;
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: none; 
-}
-
-select::-ms-expand {
-    display: none;
-}
-
-select::-ms-expand {
-    display: none;
 }
 
 .select-down_list {
@@ -271,18 +252,16 @@ select::-ms-expand {
     height: 40px;
     padding: 8px 4px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     background-color: white;
-    border: 1px solid #F2F4F7;
-    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
     color: #354153;
     gap: 8px;
 }
 
-.dropdown-trigger {
+.dropdown-default {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -290,7 +269,7 @@ select::-ms-expand {
     width: 100%;
 }
 
-.dropdown-trigger p {
+.dropdown-default p {
     text-align: right;
     width: 100%;
 }
@@ -299,16 +278,12 @@ select::-ms-expand {
     display: none;
     position: absolute;
     top: 45px;
-    left: 0;
     width: 100%;
     background-color: white;
     border: 1px solid #F2F4F7;
     border-radius: 8px;
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 100;
 }
 
 .dropdown-item {
@@ -319,10 +294,9 @@ select::-ms-expand {
 }
 
 .dropdown-item:hover {
-    background-color: #F2F4F7
+    background-color: #F2F4F7;
 }
 
 .dropdown:hover .dropdown-list {
     display: block;
 }
-
