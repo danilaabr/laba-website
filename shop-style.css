@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('E:/projects/demo-site/Inter-Medium.otf') format('opentype');
+  font-family: "Inter";
+  src: url("./Inter-Medium.otf") format("opentype");
 }
 
 button {
@@ -13,7 +13,16 @@ button {
 
 body {
   background-color: #ffffff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+.clothes-types {
+  display: flex;
+  gap: 80px;
 }
 
 h1,
@@ -42,13 +51,14 @@ select::-ms-expand {
 
 .container {
   width: 100%;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 .page-header .brand {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 60px;
 }
 
 .brand h1 {
@@ -57,7 +67,7 @@ select::-ms-expand {
 }
 
 .brand a {
-  padding-right: 40px;
+  /*padding-right: 40px;*/
   color: #0d1421;
   font-size: 16px;
   line-height: 24px;
@@ -66,15 +76,15 @@ select::-ms-expand {
 
 .variant-brand {
   display: flex;
-  align-items: center;
+  gap: 10px;
 }
 
 .title {
-  padding-left: 16px;
+  /*padding-left: 16px;*/
   font-weight: 600;
-  padding-right: 80px;
+  /*padding-right: 80px;*/
   font-size: 24px;
-  line-height: 32px;
+  /*line-height: 32px;*/
   color: #354153;
 }
 
@@ -120,8 +130,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /**/
-  padding: 2% 9% 0% 7%;
+  padding: 2% 11% 0% 8%;
 }
 
 .select-table select:focus {
@@ -238,9 +247,9 @@ header {
 .content {
   /* width: 100%; */
   display: grid;
-  grid-template: repeat(1, 1fr) / repeat(4, 1fr);;
+  grid-template: repeat(1, 1fr) / repeat(4, 1fr);
   gap: 25px;
-  padding: 2% 9% 0% 9%;
+  padding: 2% 12% 0% 10%;
   justify-content: space-between;
 }
 
@@ -251,8 +260,13 @@ header {
 }
 
 .item {
-  width: 350px;
+  width: auto;
   font-size: 14px;
+}
+
+.item > img {
+  width: 100%;
+  height: auto;
 }
 
 .brand-gap {
@@ -265,25 +279,41 @@ header {
 
 .footer-block {
   /* width: 1600px; */
-  padding-left: 9%;
+  padding-left: 7%;
   display: flex;
   align-items: center;
   font-size: 16px;
   margin-top: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+}
+
+.copyright {
+  color: #667085;
 }
 
 @media (max-width: 1280px) {
   .content {
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-    padding: 2% 9% 0 7%;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    /*padding: 2% 9% 0 7%;*/
   }
 }
 
 @media (max-width: 1200px) {
   .content {
-      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-      padding: 2% 8% 0% 11%;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    /*padding: 2% 8% 0% 11%;*/
+  }
+
+  .clothes-types {
+    display: flex;
+    gap: 30px;
+  }
+
+  .page-header .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 }
 
@@ -291,6 +321,14 @@ header {
   .content {
     grid-template: repeat(4, 1fr) / repeat(1, 1fr);
     padding: 0px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .clothes-types {
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
   }
 
   header {
@@ -312,18 +350,25 @@ header {
   .page-header .brand {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .page-header {
     flex-direction: column;
   }
 
   .actions {
     display: flex;
     gap: 8px;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .dropdown-filter {
-    padding: 0px;    
+    padding: 0px;
   }
 
   .dropdown {
