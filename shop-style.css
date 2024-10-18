@@ -277,6 +277,7 @@ header {
 .item > img {
   width: 100%;
   height: auto;
+  padding-bottom: 8px;
 }
 
 .brand-gap {
